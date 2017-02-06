@@ -1,0 +1,205 @@
+body{
+	background-color: rgba(62,66,58,1);
+}
+
+#surveyHolder{
+	margin:auto;
+	width: 70%;
+	background-color: white;
+	text-align: center;
+	font-family: 'Maven Pro', sans-serif;
+	padding-bottom: 50px;
+}
+
+#survey {
+	text-align: center;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.header {
+	text-align: center;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+h2 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: rgba(65,115,120,1);
+}
+
+h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 35px;
+	margin: auto;
+	color: rgba(65,115,120,1);
+	font-weight: 700;
+	width: 70%;
+	background-color: white;
+}
+
+.textInput{
+	display: block;
+	padding-left: 5px;
+	width: 400px;
+	height: 30px;
+	margin:auto;
+	margin-bottom: 20px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 20px;
+	color: rgba(65,115,120,1);
+
+}
+
+.questionContainer {
+	position: relative;
+	display: inline-block;
+	height: 70px;
+	width: 500px;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 700;
+	margin-bottom: 20px;
+	border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.1);
+    color: rgba(65,115,120,1);
+    font-size: 12px;
+}
+
+.agree {
+	position: absolute;
+	display: inline-block;
+	line-height: 55px;
+	text-align: left;
+}
+
+.disagree {
+	left: 52px;
+	position: absolute;
+	display: inline-block;
+	line-height: 55px;
+	text-align: left;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + span.inside {
+  background-color: #fefefe;
+  border: 3px solid;
+  border-color: rgba(164,207,190,1);
+  border-radius: 50px;
+  display: inline-block;
+  margin: 10px;
+  padding: 7px;
+  position: relative;
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + span.inside {
+  color: rgba(65,115,120,1);
+}
+input[type="radio"]:checked + span.inside:after {
+  background: rgba(65,115,120,1);
+  border-radius: 50px;
+  content: " ";
+  height: 27px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 27px;
+}
+label:hover input[type="radio"] + span.inside {
+  border-color: rgba(125,158,145,1);
+}
+
+.button {
+	font-family: 'Maven Pro', sans-serif;
+    background-color: white; /* Green */
+    border: solid;
+    border-width: 3px;
+    color: rgba(65,115,120,1);
+    border-color: rgba(65,115,120,1);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: rgba(65,115,120,1);
+    color: white;
+}
+
+.error {
+	font-family: 'Maven Pro', sans-serif;
+	color: rgba(252,67,73,1);
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.friendImage {
+	position: absolute;
+	left: -50px;
+	top: -50px;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 150px;
+}
+
+img {
+	height: 300px;
+}
+
+.modalContainer {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	left: 0;
+    top: 0;
+    overflow: auto;
+    opacity: 1;
+}
+
+.modalContent {
+	position: relative;
+	background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 600px; 
+    height: 150px;
+}
+
+.close {
+	color: rgba(164,207,190,1);
+	font-family: 'Maven Pro', sans-serif;
+	position: absolute;
+	right: 6px;
+	top: -1px;
+	font-weight: 700;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.close:hover {
+	color: red;
+}
+
+.friendName {
+	font-family: 'Maven Pro', sans-serif;
+	position: absolute;
+	top: 75px;
+	left: 280px;
+	font-weight: 700;
+	color: rgba(65,115,120,1);
+	font-size: 18px;
+}
