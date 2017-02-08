@@ -2,7 +2,7 @@ body{
 	background-color: rgba(62,66,58,1);
 }
 
-#surveyHolder{
+#surveyHolder, .container{
 	margin:auto;
 	width: 70%;
 	background-color: white;
@@ -11,12 +11,38 @@ body{
 	padding-bottom: 50px;
 }
 
+.container p {
+	color: rgba(65,115,120,1);
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
 #survey {
 	text-align: center;
 	font-family: 'Maven Pro', sans-serif;
 }
 
+.links {
+	text-align: center;
+	margin-top: 30px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.links a:visited { 
+    color: rgba(164,207,190,1);
+}
+
+.bar{
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .header {
+	margin: auto;
+	background-color: white; 
+	width: 70%;
 	text-align: center;
 	font-family: 'Maven Pro', sans-serif;
 }
